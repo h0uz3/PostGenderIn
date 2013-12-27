@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>PostGenDerIn</title>
+</head>
+<body>
+<h1>PostGenDerIn (<u>Post</u>er<u>Gen</u>erator <u>der</u> Nerds <u>in</u> Hamburg)</h1>
+<h2>Info</h2>
+<div id="info">
+    <p>This is work in progress, so don't freak out when something changes.</p>
+    <p>You can contact me via h0uz3@foto23.com (Mail or Jabber)</p>
+</div>
+<h2>Last changes</h2>
+<div id="changes">
+    <p>Automagically fits text using smaller font size where necessary</p>
+    <p>Can receive multiple lines in single text field.</p>
+    <p>Receive data from form and put them into an SVG.</p>
+</div>
+<h3>How to use</h3>
+<div id="manual">
+    <p>Enter whichever text you want to be printed into the text field below and clickt the submit button. You may use up to 23 characters per line. The font size is going to become smaller and smaller with every character you add to your lines.</p>
+</div>
+<h3>Input</h3>
+<form action="poster.php" method="POST">
+    <!-- TODO: Symbolauswahl hinzufügen.
+        div id="symbolselection">
+        <span class="symbols"><input type="radio" name="symbol" value="1"/>Symbol 1</span>
+        <span class="symbols"><input type="radio" name="symbol" value="2"/>Symbol 2</span>
+        <span class="symbols"><input type="radio" name="symbol" value="3"/>Symbol 3</span>
+        <span class="symbols"><input type="radio" name="symbol" value="4"/>Symbol 4</span>
+        <span class="symbols"><input type="radio" name="symbol" value="5"/>Symbol 5</span>
+    </div -->
+    <div id="posterContent">
+        <textarea name="text" rows="3" cols="40">Enter some text here.</textarea>
+    </div>
+    <div id="submitbutton">
+        <input type="submit"/>
+    </div>
+</form>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
